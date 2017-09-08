@@ -7,13 +7,14 @@ github: nongbin
 author: "码农网络"
 email: 1784855023@qq.com
 name: "农斌个人博客"
-url: http://blog.nongbin.online
-domain: blog.nongbin.online
+url: http://blog.nongbin.vip
+domain: http://blog.nongbin.vip
 all_categories: [
 ["web", "Web建站","/posts/web.html"], 
 ["linux", "Linux相关","/posts/linux.html"],
 ["read", "读书笔记","/posts/read.html"], 
 ["other", "杂记","/posts/other.html"],
+["Git", "Git","/posts/git.html"],
 ["about", "关于","/about.html"]
 ]
 
