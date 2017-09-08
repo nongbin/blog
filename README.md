@@ -8,8 +8,8 @@ http://blog.nongbin.online, 支持PC与智能机访问。
 修改_config.yml与_includes目录下相关文件进行配置。  
 模板可任意使用，但请保留本站**友情链接**。  
 
-#### 3.联系作者
+#### 3.本人联系方式（非作者）
 Email:1784855023@qq.com
  
  
-转载于：
+转载于：潘学文博客https://www.panxw.com(作者博客)
