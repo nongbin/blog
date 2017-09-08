@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "Git"
+category: "git"
 title:  "在windows下安装jekyll（一个很好地博客系统）"
 tags: [Git,个人]
 ---
