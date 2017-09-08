@@ -11,13 +11,14 @@ City: nanning, China
 Career: Software developer(Android&Linux&Web)  
 
 #### 2.My Links
-Blog: <http://blog.nongbin.online>  
+Blog: <http://blog.nongbin.vip>  
 GitHub: <https://github.com/nongbin>  
 LinkedIn: <http://www.linkedin.com/in/%E6%96%8C-%E5%86%9C-844523a2/>  
 
 
 #### 3.Contract
 Email: 1784855023@qq.com 
+
 QQ: 1784855023
 
 ### 4.Domain For Sale

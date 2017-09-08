@@ -1,0 +1,90 @@
+---
+layout: post
+category: "Git"
+title:  "在windows下安装jekyll（一个很好地博客系统）"
+tags: [Git,个人]
+---
+
+# 前言
+>jekyll是一个基于ruby的博客系统（因为公司电脑是ubuntu系统，自己的电脑是windows，所以有必要装下环境，方便同步操作。）
+
+### 主要有三个步骤
+```
+1，安装 Ruby
+2，安装 DevKit
+3，安装 Jekyll
+```
+### 1，安装Ruby
+下载安装exe，地址：http://rubyinstaller.org/downloads/
+根据自己的机型选择对应的安装包(因后续有需要安装不同的gem，我发现好多因为ruby版本问题装不了，所以在这推荐使用2,2,4版本的)
+### 安装过程略
+#测试是否安装完成：
+ruby -v   输出结果开头为ruby 2.3.0p0 即可后面还有，但是按照机子不同来显示的，所以不粘贴出来了
+
+### 2，安装Devkit
+					1），运行安装包并解压缩至某文件夹，如 C:\DevKit
+
+					2），通过初始化来创建 config.yml 文件。在命令行窗口内，输入下列命令：
+
+						cd “C:\DevKit”
+
+						ruby dk.rb init	
+
+						notepad config.yml	
+
+					3），在打开的记事本窗口中，于末尾添加新的一行- - C:\Ruby24-x64，保存文件并退出。不一定是这个“Ruby24-x64”就是在C盘根目录Ruby开头
+
+					4），回到命令行窗口内，审查（非必须）并安装。
+
+						ruby dk.rb review
+
+						ruby dk.rb install
+				
+				
+### 3，安装jekyll
+先查看你的gem是否安装完毕：
+	gem -v
+	gem install jekyll
+	测试是否安装完毕
+	
+# 新建jekyll 项目
+
+			jekyll new myblog
+
+			cd myblog	
+
+			运行jekyll 项目： 官方文档（http://jekyllrb.com/docs/quickstart/）
+
+			jekyll s  / jekyll serve
+
+			如果报错，按照提示，安装相关的gem
+			最终通过本地4000端口访问
+
+
+# 错误1
+
+Dependency Error: Yikes! It looks like you don’t have jekyll-paginate or one of its dependencies installed. In order to use Jekyll as currently configured, you’ll need to install this gem. The full error message from Ruby is: ‘cannot load such file – jekyll-paginate’ If you run into trouble, you can find helpful resources at Getting Help
+
+jekyll 3.1.2 | Error: jekyll-paginate
+## 解决办法：安装jekyll时候直接运行gem install jekyll-paginate即可解决。
+
+# 错误2
+
+Dependency Error: Yikes! It looks like you don't have redcarpet or one of its
+dependencies installed. In order to use Jekyll as currently configured, you'll n
+eed to install this gem. The full error message from Ruby is: 'cannot load such
+file -- redcarpet' If you run into trouble, you can find helpful resources at ht
+tp://jekyllrb.com/help/!
+  Conversion error: Jekyll::Converters::Markdown encountered an error while conv
+erting '_posts/2014-12-28-first-blog.md':
+redcarpet
+ ERROR: YOUR SITE COULD NOT BE BUILT:
+------------------------------------
+redcarpet
+## 	解决办法：_config.yml中的markdown改为kramdown
+
+# 报错:
+
+			缺少依赖rdiscount，这个是用来解析Markdown标记的解析包。		
+### 解决:
+			gem install rdiscount -V
