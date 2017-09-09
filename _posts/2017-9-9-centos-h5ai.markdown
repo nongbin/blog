@@ -1,87 +1,87 @@
 ---
 layout: post
 category: "linux"
-title:  "Ä¿Â¼³ÌĞòh5ai°²×°½Ì³Ì"
-tags: [h5ai,centos]
+title:  "ç›®å½•ç¨‹åºh5aiå®‰è£…æ•™ç¨‹"
+tags: [Centos,h5ai]
 ---
-
-
-# °²×°lnmp
+# å®‰è£…lnmp
 ```
-<¡¡1.1¡¢Ê¹ÓÃputty»òÀàËÆµÄSSH¹¤¾ßµÇÂ½VPS»ò·şÎñÆ÷£»
-µÇÂ½ºóÔËĞĞ£ºscreen -S lnmp
-Èç¹ûÌáÊ¾screen: command not found ÃüÁî²»´æÔÚ¿ÉÒÔÖ´ĞĞ£ºyum install screen »ò apt-get install screen°²×°
-#  1.2¡¢ÏÂÔØ²¢°²×°LNMPÒ»¼ü°²×°°ü
-<¡¡°²×°LNMPÎÈ¶¨°æ
+<ã€€1.1ã€ä½¿ç”¨puttyæˆ–ç±»ä¼¼çš„SSHå·¥å…·ç™»é™†VPSæˆ–æœåŠ¡å™¨ï¼›
+ç™»é™†åè¿è¡Œï¼šscreen -S lnmp
+å¦‚æœæç¤ºscreen: command not found å‘½ä»¤ä¸å­˜åœ¨å¯ä»¥æ‰§è¡Œï¼šyum install screen æˆ– apt-get install screenå®‰è£…
+#  1.2ã€ä¸‹è½½å¹¶å®‰è£…LNMPä¸€é”®å®‰è£…åŒ…
+<ã€€å®‰è£…LNMPç¨³å®šç‰ˆ
 <  wget -c http://soft.vpser.net/lnmp/lnmp1.4.tar.gz && tar zxf lnmp1.4.tar.gz && cd lnmp1.4 && ./install.sh lnmp
-<  Ä¬ÈÏ°²×°lnmp¿É²»Ğ´£¬ÈçĞèÒª°²×°LNMPA»òLAMP£¬½«./install.sh ºóÃæµÄ²ÎÊıÌæ»»Îªlnmpa»òlamp¼´¿É¡£ÈçĞè¸ü¸ÄÍøÕ¾ºÍÊı¾İ¿âÄ¿Â¼ÏÈĞŞ¸Ä°²×°°üÄ¿Â¼ÏÂµÄ lnmp.conf ÎÄ¼ş¡£
+<  é»˜è®¤å®‰è£…lnmpå¯ä¸å†™ï¼Œå¦‚éœ€è¦å®‰è£…LNMPAæˆ–LAMPï¼Œå°†./install.sh åé¢çš„å‚æ•°æ›¿æ¢ä¸ºlnmpaæˆ–lampå³å¯ã€‚å¦‚éœ€æ›´æ”¹ç½‘ç«™å’Œæ•°æ®åº“ç›®å½•å…ˆä¿®æ”¹å®‰è£…åŒ…ç›®å½•ä¸‹çš„ lnmp.conf æ–‡ä»¶ã€‚
 ```
-#  h5ai¹ÙÍø
-< ÍøÖ·£º https://larsjung.de/h5ai/
+#  h5aiå®˜ç½‘
+< ç½‘å€ï¼š https://larsjung.de/h5ai/
 
 ```
-	2.1 ¹ÙÍøÏÂÔØh5ai£¬¹ı³ÌÂÔ
-	2.2ÉèÖÃºÃĞéÄâÖ÷»úºó£¬±à¼­ĞéÄâÖ÷»úÅäÖÃÎÄ¼ş£º
+	2.1 å®˜ç½‘ä¸‹è½½h5aiï¼Œè¿‡ç¨‹ç•¥
+	2.2è®¾ç½®å¥½è™šæ‹Ÿä¸»æœºåï¼Œç¼–è¾‘è™šæ‹Ÿä¸»æœºé…ç½®æ–‡ä»¶ï¼š
 		vim /usr/local/nginx/conf/vhost/your_domain.conf
-	2.3 ½« rootÉÏÒ»ĞĞ£¨ÒÔnginxÎªÀı×Ó£©£¬¸ÄÎª£º
+	2.3 å°† rootä¸Šä¸€è¡Œï¼ˆä»¥nginxä¸ºä¾‹å­ï¼‰ï¼Œæ”¹ä¸ºï¼š
 		index index.html index.php /_h5ai/public/index.php;
-	2.4È¥³ı±»½ûÓÃµÄ PHP º¯Êı£º
+	2.4å»é™¤è¢«ç¦ç”¨çš„ PHP å‡½æ•°ï¼š
 		vim /usr/local/php/etc/php.ini
-		ËÑË÷¡±disable_functions¡° É¾³ıÕâ¼¸¸öº¯Êı¡±scandir¡¢exec¡¢passthru£¬½«Æä´Ó±»½ûÓÃµÄº¯ÊıÖĞÉ¾³ı¡°
-		Tip£ºvimËÑË÷¡±£º/ disable_functions¡° set nu ÏÔÊ¾ĞĞºÅ
-	2.5ÖØÆôlnmp
+		æœç´¢â€disable_functionsâ€œ åˆ é™¤è¿™å‡ ä¸ªå‡½æ•°â€scandirã€execã€passthruï¼Œå°†å…¶ä»è¢«ç¦ç”¨çš„å‡½æ•°ä¸­åˆ é™¤â€œ
+		Tipï¼švimæœç´¢â€ï¼š/ disable_functionsâ€œ set nu æ˜¾ç¤ºè¡Œå·
+	2.5é‡å¯lnmp
 		lnmp restart 
 	
 ```
 
-# h5aiÄ¿Â¼
-< ©À©¤©¤ _h5ai
-< ©¦   ©À©¤©¤ CHANGELOG.md
-< ©¦   ©À©¤©¤ private
-< ©¦   ©¸©¤©¤ README.md
-< ©À©¤©¤ ÄúÒªÏÔÊ¾µÄÎÄ¼ş¼Ğ
-< ©¦   ©À©¤©¤ ×ÓÎÄ¼ş¼Ğ1
-< ©¦   ©À©¤©¤ ÎÄ¼ş1
-< ©¦   ©¸©¤©¤ ÎÄ¼ş2
-< ©¸©¤©¤ ÄúÒªÏÔÊ¾µÄÎÄ¼ş¼Ğ
-< ©À©¤©¤ ÎÄ¼ş1
-< ©¸©¤©¤ ÎÄ¼ş2
+# h5aiç›®å½•
 
 
-# ¿ªÆô h5ai ¸ü¶à¹¦ÄÜ
-< µ½Ä¿Ç°ÎªÖ¹£¬h5ai ¿ÉÒÔÕı³£Ê¹ÓÃÁË£¬µ«ÊÇÎÒÃÇ¿ÉÒÔ¿ªÆô _h5ai È«²¿¹¦ÄÜ¡£Í¨¹ı http(s)://your_domain/_h5ai/public/index.php ¿ÉÒÔ²é¿´ _h5ai µÄÈ«²¿¹¦ÄÜ¿ªÆôÇé¿ö£¬Ä¬ÈÏÃÜÂëÊÇ¿ÕµÄ¡£
+< â”œâ”€â”€ _h5ai
+< â”‚   â”œâ”€â”€ CHANGELOG.md
+< â”‚   â”œâ”€â”€ private
+< â”‚   â””â”€â”€ README.md
+< â”œâ”€â”€ æ‚¨è¦æ˜¾ç¤ºçš„æ–‡ä»¶å¤¹
+< â”‚   â”œâ”€â”€ å­æ–‡ä»¶å¤¹1
+< â”‚   â”œâ”€â”€ æ–‡ä»¶1
+< â”‚   â””â”€â”€ æ–‡ä»¶2
+< â””â”€â”€ æ‚¨è¦æ˜¾ç¤ºçš„æ–‡ä»¶å¤¹
+< â”œâ”€â”€ æ–‡ä»¶1
+< â””â”€â”€ æ–‡ä»¶2
 
-# options.json ÖĞµÄ¸ü¶à¹¦ÄÜ
+
+# å¼€å¯ h5ai æ›´å¤šåŠŸèƒ½
+< åˆ°ç›®å‰ä¸ºæ­¢ï¼Œh5ai å¯ä»¥æ­£å¸¸ä½¿ç”¨äº†ï¼Œä½†æ˜¯æˆ‘ä»¬å¯ä»¥å¼€å¯ _h5ai å…¨éƒ¨åŠŸèƒ½ã€‚é€šè¿‡ http(s)://your_domain/_h5ai/public/index.php å¯ä»¥æŸ¥çœ‹ _h5ai çš„å…¨éƒ¨åŠŸèƒ½å¼€å¯æƒ…å†µï¼Œé»˜è®¤å¯†ç æ˜¯ç©ºçš„ã€‚
+
+# options.json ä¸­çš„æ›´å¤šåŠŸèƒ½
 ```
-Î»ÓÚ _h5ai/private/conf Ä¿Â¼ÏÂ¡£
+ä½äº _h5ai/private/conf ç›®å½•ä¸‹ã€‚
 
-´ò°üÏÂÔØ£º
-ËÑË÷ ¡°download¡±
-127 ĞĞ£¬enabled ÓÉ false ¸ÄÎª true¡£
+æ‰“åŒ…ä¸‹è½½ï¼š
+æœç´¢ â€œdownloadâ€
+127 è¡Œï¼Œenabled ç”± false æ”¹ä¸º trueã€‚
 
-ÎÄ¼şĞÅÏ¢¼°¶şÎ¬Âë£º
-ËÑË÷ ¡°info¡±
-185 ĞĞ£¬enabled ÓÉ false ¸ÄÎª true¡£
+æ–‡ä»¶ä¿¡æ¯åŠäºŒç»´ç ï¼š
+æœç´¢ â€œinfoâ€
+185 è¡Œï¼Œenabled ç”± false æ”¹ä¸º trueã€‚
 
-Ä¬ÈÏ¼òÌåÖĞÎÄ£º
-ËÑË÷ ¡°l10n¡±
-202 ĞĞ£¬enabled ÓÉ false ¸ÄÎª true¡£
+é»˜è®¤ç®€ä½“ä¸­æ–‡ï¼š
+æœç´¢ â€œl10nâ€
+202 è¡Œï¼Œenabled ç”± false æ”¹ä¸º trueã€‚
 
-ÎÄ¼ş¼°ÎÄ¼ş¼Ğ¶àÑ¡£º
-ËÑË÷ ¡°select¡±
-323 ĞĞ£¬enabled ÓÉ false ¸ÄÎª true¡£
+æ–‡ä»¶åŠæ–‡ä»¶å¤¹å¤šé€‰ï¼š
+æœç´¢ â€œselectâ€
+323 è¡Œï¼Œenabled ç”± false æ”¹ä¸º trueã€‚
 ```
 
-# ÂÔËõÍ¼¹¦ÄÜ
+# ç•¥ç¼©å›¾åŠŸèƒ½
 ```
- Í¼Æ¬£º
-		½« _h5ai ÖĞ£¬private Óë public ÎÄ¼ş¼ĞÖĞµÄ cache Ä¿Â¼ÉèÖÃÈ¨ÏŞÎª 755¡£
- EXIF£º
-	  Í¨¹ı phpize °²×° PHP µÄ exif Ä£¿é¼´¿É¡£
- ÊÓÆµÂÔËõÍ¼£º
-			°²×° FFmpeg ¼´¿É¡£
- PDF ÂÔËõÍ¼£º
-			°²×° ImageMagick¡£
+ å›¾ç‰‡ï¼š
+		å°† _h5ai ä¸­ï¼Œprivate ä¸ public æ–‡ä»¶å¤¹ä¸­çš„ cache ç›®å½•è®¾ç½®æƒé™ä¸º 755ã€‚
+ EXIFï¼š
+	  é€šè¿‡ phpize å®‰è£… PHP çš„ exif æ¨¡å—å³å¯ã€‚
+ è§†é¢‘ç•¥ç¼©å›¾ï¼š
+			å®‰è£… FFmpeg å³å¯ã€‚
+ PDF ç•¥ç¼©å›¾ï¼š
+			å®‰è£… ImageMagickã€‚
 ```
-# Shell tar¡¢Shell zipºÍShell du
-< È¥³ıÔÚ php.ini ÖĞ±»½ûÓÃº¯Êı execÓë passthru ¼´¿É¡£ÁíÍâÈ¥³ı½ûÓÃµÄ scandir º¯Êı£¨Èç¹ûÓĞ£©£¬²»È»»áµ¼ÖÂÎŞ·¨ÏÔÊ¾Ä¿Â¼¡£
+# Shell tarã€Shell zipå’ŒShell du
+< å»é™¤åœ¨ php.ini ä¸­è¢«ç¦ç”¨å‡½æ•° execä¸ passthru å³å¯ã€‚å¦å¤–å»é™¤ç¦ç”¨çš„ scandir å‡½æ•°ï¼ˆå¦‚æœæœ‰ï¼‰ï¼Œä¸ç„¶ä¼šå¯¼è‡´æ— æ³•æ˜¾ç¤ºç›®å½•ã€‚
