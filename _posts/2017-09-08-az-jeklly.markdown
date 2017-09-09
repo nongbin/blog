@@ -62,14 +62,15 @@ ruby -v   输出结果开头为ruby 2.3.0p0 即可后面还有，但是按照机
 
 
 # 错误1
-
+```
 Dependency Error: Yikes! It looks like you don’t have jekyll-paginate or one of its dependencies installed. In order to use Jekyll as currently configured, you’ll need to install this gem. The full error message from Ruby is: ‘cannot load such file – jekyll-paginate’ If you run into trouble, you can find helpful resources at Getting Help
 
 jekyll 3.1.2 | Error: jekyll-paginate
-## 解决办法：安装jekyll时候直接运行gem install jekyll-paginate即可解决。
+```
+# 解决办法：安装jekyll时候直接运行gem install jekyll-paginate即可解决。
 
 # 错误2
-
+```
 Dependency Error: Yikes! It looks like you don't have redcarpet or one of its
 dependencies installed. In order to use Jekyll as currently configured, you'll n
 eed to install this gem. The full error message from Ruby is: 'cannot load such
@@ -81,10 +82,13 @@ redcarpet
  ERROR: YOUR SITE COULD NOT BE BUILT:
 ------------------------------------
 redcarpet
-## 	解决办法：_config.yml中的markdown改为kramdown
+```
+
+# 解决办法：_config.yml中的markdown改为kramdown
 
 # 报错:
+```
+缺少依赖rdiscount，这个是用来解析Markdown标记的解析包。		
+```
 
-			缺少依赖rdiscount，这个是用来解析Markdown标记的解析包。		
-### 解决:
-			gem install rdiscount -V
+# 解决: gem install rdiscount -V
