@@ -5,6 +5,7 @@ title:  "目录程序h5ai安装教程"
 tags: [h5ai,centos]
 ---
 
+
 # 安装lnmp
 ```
 <　1.1、使用putty或类似的SSH工具登陆VPS或服务器；

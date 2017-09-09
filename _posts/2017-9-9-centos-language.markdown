@@ -14,7 +14,7 @@ tags: [linux,language]
 < yum groupinstall chinese-support（不能联网的通过其他电脑下载，上传上去吧）
 
 ```
-#  修改系统语言为中文
+  修改系统语言为中文
 					Vi  /etc/sysconfig/i18n （注意改好之后重启一下系统）
 					将第一行修改为LANG="zh_CN.UTF-8"
 ```
