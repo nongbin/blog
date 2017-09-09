@@ -15,7 +15,7 @@ tags: [h5ai,centos]
 <  wget -c http://soft.vpser.net/lnmp/lnmp1.4.tar.gz && tar zxf lnmp1.4.tar.gz && cd lnmp1.4 && ./install.sh lnmp
 <  默认安装lnmp可不写，如需要安装LNMPA或LAMP，将./install.sh 后面的参数替换为lnmpa或lamp即可。如需更改网站和数据库目录先修改安装包目录下的 lnmp.conf 文件。
 ```
-# h5ai官网
+#  h5ai官网
 < 网址： https://larsjung.de/h5ai/
 
 ```
