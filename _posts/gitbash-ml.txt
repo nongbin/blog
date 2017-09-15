@@ -1,0 +1,20 @@
+			gitbash
+
+git status  //查看状态//
+
+红字代表新文件
+
+
+git add 2017-9-15-git-gitbash.markdown  //添加新文件//
+
+这时候红字变为绿色
+
+
+git commit -m "add 2017-9-15-git-gitbash.mar
+kdown"  //添加项目描述
+
+
+
+git push  //项目推送// 
+
+Tip：第一次使用可能弹出登录窗口，输入账号密码登录即可
