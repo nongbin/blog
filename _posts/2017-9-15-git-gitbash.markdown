@@ -7,7 +7,7 @@ tags: [window,git,github,gitbash]
 
 #  windows7使用git bash  
 
-< 本文教程结合GitHub的官方帮助文档 https://help.github.com/articles/set-up-git/
+> 本文教程结合GitHub的官方帮助文档 https://help.github.com/articles/set-up-git/
 
 
 ### 第一步，下载git，安装，过程略（不会的自己百度）官网：https://git-scm.com/downloads  Tip：下载需要fq，不然速度感人
@@ -19,15 +19,17 @@ tags: [window,git,github,gitbash]
 ```
 
 ### 第三步，设置用户名   
-<  1. 打开git bash   
-<  2. 输入命令 “$ git config --global user.name "Mona Lisa"” Tip：Mona Lisa 修改为自己的名字
-<　3. 验证用户名“$ git config --global user.name ”   官方文档： https://help.github.com/articles/setting-your-username-in-git/
+>  1. 打开git bash   
+>  2. 输入命令 “$ git config --global user.name "Mona Lisa"” Tip：Mona Lisa 修改为自己的名字
+>　3. 验证用户名“$ git config --global user.name ”   官方文档： https://help.github.com/articles/setting-your-username-in-git/
 
 
 ### 第三步，设置邮箱   
-<  1. 打开git bash   
-<  2. 输入命令 “$ git config --global user.email "email@example.com""” Tip：email@example.com 修改为自己的邮箱   
-<　3. 验证用户名“$ git config --global user.email ”     官方文档： https://help.github.com/articles/setting-your-commit-email-address-in-git/  
+>  1. 打开git bash   
+>  2. 输入命令 “$ git config --global user.email "email@example.com""” 
+>  Tip：email@example.com 修改为自己的邮箱 
+>    
+>　3. 验证用户名“$ git config --global user.email ”     官方文档： https://help.github.com/articles/setting-your-commit-email-address-in-git/  
 
 
 
