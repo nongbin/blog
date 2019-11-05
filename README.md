@@ -1,6 +1,8 @@
 Jekyll博客模板
 ================
 
+[![]( https://img.shields.io/badge/个人博客-@NongBin-red.svg )](https://blog.nongbin.vip)
+
 #### 1.浏览
 http://blog.nongbin.vip, 支持PC与智能机访问。  
 
